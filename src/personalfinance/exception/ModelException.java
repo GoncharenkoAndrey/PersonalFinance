@@ -2,7 +2,8 @@ package personalfinance.exception;
 
 import personalfinance.settings.Text;
 
-public class ModelException {
+public class ModelException extends Exception {
+	private static final long serialVersionUID = -3191910523010113216L;
 	public static final int TITLE_EMPTY = 1;
 	public static final int CODE_EMPTY = 2;
 	public static final int CURRENCY_EMPTY = 3;
