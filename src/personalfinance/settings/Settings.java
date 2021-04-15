@@ -11,7 +11,7 @@ import org.ini4j.Ini;
 import org.ini4j.IniPreferences;
 import org.ini4j.Wini;
 
-public class Settings {
+public final class Settings {
 	
 	public static final File FONT_ROBOTO_LIGHT = new File("fonts/Roboto-Light.ttf");
 	public static final File SAVE_DIR = new File("saves/");
