@@ -3,7 +3,7 @@ package personalfinance.settings;
 import java.util.HashMap;
 
 final public class Text {
-    private static final HashMap<String, String> data = new HashMap();
+    private static final HashMap<String, String> data = new HashMap<String, String>();
     public static void init() {
         data.put("PROGRAM_NAME", "Домашняя бухгалтерия");
         data.put("MENU_FILE", "Файл");
@@ -50,6 +50,9 @@ final public class Text {
         return months;
     }
     public static String get(String key) {
-        return data.get(key);
+    	if(data.containsKey(key))
+    		return data.get(key);
+    	System.out.println("Такого ключа в Text не существует!");
+    	return "";
     }
 }
