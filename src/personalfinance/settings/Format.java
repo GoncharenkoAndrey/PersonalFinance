@@ -7,7 +7,7 @@ import java.util.Date;
 import personalfinance.model.Currency;
 import personalfinance.model.Filter;
 
-public class Format {
+final public class Format {
 	
 	public static String amount(double amount) {
 		return String.format(Settings.FORMAT_AMOUNT, amount);
